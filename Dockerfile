@@ -27,6 +27,4 @@ COPY --from=base /tmp/.kube/* /.kube/
 
 ENV KUBECONFIG=/.kube/config
 
-USER 1000:1000
-
 CMD [ "/bin/sh" ]
