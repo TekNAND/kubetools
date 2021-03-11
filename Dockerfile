@@ -17,6 +17,8 @@ RUN mkdir ./.kube && \
 
 FROM alpine:3.13 AS final
 
+RUN apk add --no-cache curl
+
 COPY --from=base --chown=root:root /tmp/kubectl /usr/local/bin
 
 COPY --from=base --chown=root:root /tmp/linux-amd64/helm /usr/local/bin
