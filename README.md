@@ -6,7 +6,8 @@ Kubetools is a simple Alpine Docker image created with kubectl and helm installe
 
 | Image Version  | Tool Versions |
 | -------------- | ------------- |
-| 1.19.3, latest | kubectl v1.19.3<br>helm v3.5.2 |
+| 1.28.4, latest | kubectl v1.28.4<br>helm v3.13.2 |
+| 1.19.3 | kubectl v1.19.3<br>helm v3.5.2 |
 
 ## Kubectl Configuration
 
