@@ -28,7 +28,9 @@ RUN addgroup -g 1000 alpine && \
 
 USER alpine
 
-COPY --from=base --chown=alpine:alpine /tmp/.kube/* /home/alpine/.kube/
+COPY --from=base --chown=alpine:alpine /tmp/.kube/* /.kube/
+
+ENV KUBECONFIG=/.kube/config
 
 WORKDIR /home/alpine
 
